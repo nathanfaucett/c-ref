@@ -1,0 +1,16 @@
+{
+    "name": "ref",
+    "version": "0.0.1",
+    "repo": "nathanfaucett/c-ref",
+    "description": "ref struct macros",
+    "keywords": ["types"],
+    "license": "MIT",
+    "src": [
+        "src/lib.h",
+        "src/lib.c"
+    ],
+    "dependencies": {
+        "nathanfaucett/c-types": "0.0.1",
+        "nathanfaucett/c-thread": "0.0.1"
+    }
+}

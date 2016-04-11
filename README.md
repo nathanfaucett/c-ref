@@ -1,0 +1,4 @@
+ref
+=======
+
+ref struct macros
