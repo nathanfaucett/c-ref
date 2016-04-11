@@ -3,6 +3,7 @@
 
 
 #include "./lib.h"
+#include "thread/lib.c"
 
 
 Ref* Ref_init(Ref* ref, void* value, ref_destructor destructor) {
