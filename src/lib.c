@@ -16,6 +16,7 @@ Ref* Ref_new(void* value, ref_destructor destructor) {
     return Ref_init((Ref*) malloc(sizeof(Ref)), value, destructor);
 }
 void Ref_delete(Ref* ref) {
+    Mutex_destroy(&ref->mutex);
     if (ref->destructor != NULL) {
         ref->destructor(ref->value);
     }
